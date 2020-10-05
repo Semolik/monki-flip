@@ -12,8 +12,8 @@ setuptools.setup(
     long_description_content_type='text/markdown',
     url='https://github.com/Semolik/monki-flip',
     packages=setuptools.find_packages(),
-    package_data={'gsbl': ['media/*.*']},
-    entry_points={'console_scripts': ['monk=gsbl.__main__:main']},
+    package_data={'monk': ['media/*.*']},
+    entry_points={'console_scripts': ['monk=monk.__main__:main']},
     install_requires=['pylsd-nova>=1.2.0', 'numpy', 'Pillow', 'moviepy'],
     classifiers=[
         'Programming Language :: Python :: 3',

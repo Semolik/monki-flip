@@ -1,7 +1,7 @@
 def main():
     import argparse
 
-    parser = argparse.ArgumentParser(prog='gsbl', description="Create a 'get stick bugged lol' video from an image.")
+    parser = argparse.ArgumentParser(prog='monk', description="Create a 'get stick bugged lol' video from an image.")
     parser.add_argument('input',
                         help="the image file to be used to generate the video (png, jpg, ...). For best results, make"
                              "sure the image doesn't have any black or white borders surrounding it.")
@@ -23,7 +23,7 @@ def main():
 
     args = parser.parse_args()
 
-    from gsbl.stick_bug import StickBug
+    from monk.stick_bug import StickBug
 
     sb = StickBug(img=args.input, video_resolution=args.resolution, lsd_scale=args.lsd_scale,
                   img_bg_color=args.img_bg_color, line_color=args.line_color, line_bg_color=args.line_bg_color)
